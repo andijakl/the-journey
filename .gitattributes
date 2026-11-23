@@ -1,0 +1,12 @@
+# The historic files are kept byte-for-byte as they were released:
+# CRLF line endings, Latin-1 (journey.l03) and UTF-8 (journey.l16) encodings.
+# Don't let Git normalise them.
+source/**   -text
+release/**  -text
+*.pdf       binary
+*.sis       binary
+
+# Symbian resource files are not RSS feeds; keep them out of GitHub's language stats.
+*.rss       linguist-detectable=false
+*.rls       linguist-detectable=false
+*.loc       linguist-detectable=false

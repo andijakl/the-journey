@@ -1,0 +1,27 @@
+/*
+============================================================================
+ Name        : Journey.rss
+ Author      : Andreas Jakl
+ Copyright   : 2007, Mopius
+ Description : This file contains the application registration resource.
+============================================================================
+*/
+
+#include "Journey.hrh"
+#include <appinfo.rh>
+#include "Journey.rls"
+#include <Journey.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 _UID3
+
+RESOURCE APP_REGISTRATION_INFO
+  {
+  app_file="Journey";
+  localisable_resource_file =  qtn_loc_resource_file_1;
+  localisable_resource_id = R_LOCALISABLE_APP_INFO;
+
+  embeddability=KAppNotEmbeddable;
+  newfile=KAppDoesNotSupportNewFile;
+  }
+      

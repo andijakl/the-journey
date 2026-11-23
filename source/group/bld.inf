@@ -1,0 +1,12 @@
+
+PRJ_PLATFORMS
+WINSCW GCCE
+
+PRJ_EXPORTS
+
+PRJ_MMPFILES
+
+gnumakefile Icons_scalable_dc.mk
+
+
+Journey.mmp

@@ -1,0 +1,340 @@
+/*
+============================================================================
+ Name        : Journey.rss
+ Author      : Andreas Jakl
+ Copyright   : 2007, Mopius
+ Description : This file contains all the resources for the Journey.
+============================================================================
+*/
+//  RESOURCE IDENTIFIER
+NAME JRNY    // 4 letter ID
+
+
+//  INCLUDES
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <appinfo.rh>
+#include "Journey.hrh"
+#include "Journey.rls"
+#include "journey.loc"
+
+//  RESOURCE DEFINITIONS
+// -----------------------------------------------------------------------------
+//
+//    Define the resource file signature
+//    This resource should be empty.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE
+    {
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    Default Document Name
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name
+    {
+    buf="JRNY";
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    Define default menu and CBA key.
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE EIK_APP_INFO
+    {
+	status_pane = r_status_pane_empty; 
+    }
+
+RESOURCE TBUF r_about_text { buf = qtn_about_text; }
+RESOURCE TBUF r_continue { buf = qtn_continue; }
+
+RESOURCE TBUF r_info_text { buf = qtn_info_text; }
+RESOURCE TBUF r_privacy_text { buf = qtn_privacy_text; }
+
+
+RESOURCE TBUF r_loading { buf = qtn_loading; }
+RESOURCE TBUF r_wrongarea_notpossible {buf = qtn_wrongarea_notpossible; }
+RESOURCE TBUF r_nonet {buf = qtn_nonet; }
+RESOURCE TBUF r_nogsm {buf = qtn_nogsm; }
+RESOURCE TBUF r_offline {buf = qtn_offline; }
+
+RESOURCE TBUF r_areaname_no {buf = qtn_areaname_NO; }
+RESOURCE TBUF r_areaname_00 {buf = qtn_areaname_00; }
+RESOURCE TBUF r_areaname_01 {buf = qtn_areaname_01; }
+RESOURCE TBUF r_areaname_02 {buf = qtn_areaname_02; }
+
+RESOURCE TBUF r_story_000 { buf = qtn_story_000; }
+RESOURCE TBUF r_story_001 { buf = qtn_story_001; }
+RESOURCE TBUF r_story_002 { buf = qtn_story_002; }
+RESOURCE TBUF r_story_003 { buf = qtn_story_003; }
+
+RESOURCE TBUF r_story_004 { buf = qtn_story_004; }
+RESOURCE TBUF r_wrongarea_004_NO {buf = qtn_wrongarea_004_NO; }
+RESOURCE TBUF r_wrongarea_004_00 {buf = qtn_wrongarea_004_00; }
+
+RESOURCE TBUF r_story_005 { buf = qtn_story_005; }
+RESOURCE TBUF r_wrongarea_005_NO {buf = qtn_wrongarea_005_NO; }
+RESOURCE TBUF r_story_006 { buf = qtn_story_006; }
+RESOURCE TBUF r_story_007 { buf = qtn_story_007; }
+
+RESOURCE TBUF r_story_008 { buf = qtn_story_008; }
+RESOURCE TBUF r_wrongarea_008_NO {buf = qtn_wrongarea_008_NO; }
+RESOURCE TBUF r_wrongarea_008_00 {buf = qtn_wrongarea_008_00; }
+RESOURCE TBUF r_wrongarea_008_01 {buf = qtn_wrongarea_008_01; }
+RESOURCE TBUF r_story_009 { buf = qtn_story_009; }
+RESOURCE TBUF r_wrongarea_009_NO {buf = qtn_wrongarea_009_NO; }
+
+RESOURCE TBUF r_story_010 { buf = qtn_story_010; }
+RESOURCE TBUF r_wrongarea_010_NO {buf = qtn_wrongarea_010_NO; }
+RESOURCE TBUF r_wrongarea_010_01 {buf = qtn_wrongarea_010_01; }
+RESOURCE TBUF r_wrongarea_010_02 {buf = qtn_wrongarea_010_02; }
+RESOURCE TBUF r_story_011 { buf = qtn_story_011; }
+RESOURCE TBUF r_wrongarea_011_NO {buf = qtn_wrongarea_011_NO; }
+RESOURCE TBUF r_story_012 { buf = qtn_story_012; }
+RESOURCE TBUF r_story_013 { buf = qtn_story_013; }
+RESOURCE TBUF r_story_014 { buf = qtn_story_014; }
+
+RESOURCE TBUF r_menu_options { buf = qtn_menu_options; }
+RESOURCE TBUF r_menu_exit { buf = qtn_menu_exit; }
+RESOURCE TBUF r_menu_accept { buf = qtn_menu_accept; }
+
+//----------------------------------------------------
+//   
+//    r_journey_view1
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_journey_view1
+    {
+    menubar=r_journey_menubar_view1;  
+    cba=r_journey_softkeys_options_exit;    
+    }
+
+//----------------------------------------------------
+RESOURCE CBA r_journey_softkeys_options_exit
+    {
+    buttons =
+        {
+        CBA_BUTTON {id = EJourneyCmdMenu; txt = qtn_menu_options;  },
+        CBA_BUTTON {id = EJourneyCmdExit; txt = qtn_menu_exit; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_journey_menubar_view1
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_journey_menubar_view1
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_journey_app_menu; txt="App"; },
+        MENU_TITLE { menu_pane=r_journey_view1_menu; txt="View1"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_journey_view1_menu
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_journey_view1_menu
+    {
+    items=
+        {
+        MENU_ITEM { command=EJourneyCmdContinueGame; txt = qtn_menu_continue;  },
+        MENU_ITEM { command=EJourneyCmdStartGame;    txt = qtn_menu_startgame; flags = EEikMenuItemSeparatorAfter; },
+        MENU_ITEM { command=EJourneyCmdAbout;        txt = qtn_menu_about;  flags = EEikMenuItemSeparatorAfter; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_journey_view2
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_journey_view2
+    {
+    menubar=r_journey_menubar_view2;  
+    cba=r_journey_softkeys_options_exit; 
+    }
+
+
+//----------------------------------------------------
+//   
+//    r_journey_menubar_view2
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_journey_menubar_view2
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_journey_app_menu; txt="App"; },
+        MENU_TITLE { menu_pane=r_journey_view2_menu; txt="View2"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_journey_view2_menu
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_journey_view2_menu
+    {
+    items=
+        {
+        MENU_ITEM { command=EJourneyCmdReturnToMenu; txt = qtn_menu_return; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_journey_app_menu
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_journey_app_menu
+    {
+    items=
+        {
+        MENU_ITEM { command = EAknCmdExit; txt = qtn_menu_exit; }
+        };
+    }
+
+
+
+//----------------------------------------------------
+//   
+//    r_status_pane_empty
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE STATUS_PANE_APP_MODEL r_status_pane_empty 
+{ 
+layout = R_AVKON_STATUS_PANE_LAYOUT_EMPTY; 
+} 
+
+
+//----------------------------------------------------
+//   
+//    Pause-Query
+//
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_journey_pause_query
+    {
+    flags = EGeneralQueryFlags;
+	buttons = r_journey_softkeys_end_resume;
+
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = qtn_game_paused;
+                };
+            }
+        };
+    }
+
+
+//-----------------------------------------------------------------------------
+//    Softkeys for pause
+//
+RESOURCE CBA r_journey_softkeys_end_resume
+{
+	buttons =
+    {
+		CBA_BUTTON {id = EJourneyCmdPauseEnd;    txt = qtn_end;	} ,
+	    CBA_BUTTON {id = EJourneyCmdPauseResume; txt = qtn_resume;	}
+    };
+}
+
+
+// -----------------------------------------------------------------------------
+//
+//   r_menubar
+//   Main menubar
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_menubar
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_menu; }
+        };
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//   r_menu
+//   Menu for "Options"
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_menu
+    {
+    items =
+        {
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// Resources for messages.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF32 r_command1_text { buf=qtn_command1_text; }
+RESOURCE TBUF32 r_caption_string { buf=qtn_caption_string; }
+
+// ---------------------------------------------------------------------------- 
+//
+// r_localisable_app_info
+//
+// ---------------------------------------------------------------------------- 
+//
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+    {
+    short_caption = qtn_caption_string;
+    caption_and_icon = 
+    CAPTION_AND_ICON_INFO
+        {
+        caption = qtn_caption_string;
+
+        number_of_icons = 1;
+	   	icon_file = "\\resource\\apps\\Journey.mif";
+	    };
+    }
+
+
+// End of File

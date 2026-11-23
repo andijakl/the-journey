@@ -1,0 +1,37 @@
+/*
+============================================================================
+ Name        : Journey.hrh
+ Author      : Andreas Jakl
+ Copyright   : 2007, Mopius
+ Description : This file contains declarations for constants of Journey.
+               The file can be included in C++ or resource file.
+============================================================================
+*/
+#ifndef __JOURNEY_HRH__
+#define __JOURNEY_HRH__
+
+#define _UID3 0x20009AEB
+
+// Journey enumerate command codes
+enum TJourneyIds
+    {
+    ECommand1 = 0x6001, // start value must not be 0
+    ECommand2
+    };
+
+enum TJourneyCommandIds
+    {
+    EJourneyCmdStartGame = 1,
+	EJourneyCmdContinueGame,
+	EJourneyCmdReturnToMenu,
+	EJourneyCmdAbout,
+
+	// Softkeys
+	EJourneyCmdMenu,
+	EJourneyCmdExit,
+
+	EJourneyCmdPauseEnd,
+	EJourneyCmdPauseResume
+    };
+    
+#endif // __JOURNEY_HRH__

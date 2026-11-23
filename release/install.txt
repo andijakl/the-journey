@@ -1,0 +1,31 @@
+The Journey v1.40 for Symbian
+A Mobile Location-Based Adventure
+Installation Instructions
+--------------------------------------------------------------
+
+Installation
+------------
+For a detailled description of how to install a Symbian application 
+on your mobile phone, please read the manual.
+
+Quick installation guide:
+
+1. There are several ways to install the game on your phone:
+
+a) Install the game using the data suite that came with your mobile phone
+   (e.g. Nokia PC Suite). There should be an option to install an
+   application after you connect your phone using the USB cable, bluetooth
+   or infrared.
+   
+a) Send the "Journey.sis"-file to your phone using bluetooth or infrared.
+   After the file is received, choose to open it. If you do not find the
+   file on the phone, go to the inbox of the messaging application.
+      
+2. Follow the installation instructions of the mobile phone. You can 
+   install the game either to the phone memory or the memory card 
+   (if available).
+   
+3. Congratulations, the game is installed! Depending on the phone,
+   it should now be available in a menu with a name like 
+   "Applications", "My own", "Personal", ...
+   

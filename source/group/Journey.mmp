@@ -1,0 +1,46 @@
+// Journey.mmp
+
+/*& START_BINARY_BUILD &*/
+CAPABILITY READDEVICEDATA
+TARGET Journey.exe
+TARGETTYPE exe
+UID 0x100039CE 0x20009AEB
+VENDORID 0x00000000
+SECUREID 0x20009AEB
+/*& END_BINARY_BUILD &*/
+
+LANG 01 03 16
+
+/*& START_SEARCH_PATHS &*/
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\mw \epoc32\include\platform \epoc32\include\platform\mw
+USERINCLUDE ..\inc ..\data
+/*& END_SEARCH_PATHS &*/
+
+/*& START_PROJECT_CONTENT &*/
+SOURCEPATH ..\data
+START RESOURCE Journey.rss
+TARGETPATH resource\apps
+HEADER
+END
+START RESOURCE Journey_reg.rss
+TARGETPATH private\10003a3f\apps
+HEADER
+END
+SOURCEPATH ..\src
+SOURCE bitmapmethods.cpp TextBox.cpp SysInfo.cpp JourneyVMenu.cpp
+SOURCE JourneyVGame.cpp JourneyStory.cpp JourneyLocation.cpp
+SOURCE JourneyFunctions.cpp JourneyEngine.cpp JourneyDocument.cpp
+SOURCE JourneyCMenu.cpp JourneyCGame.cpp JourneyApplication.cpp JourneyAppUi.cpp
+SOURCE Journey.cpp
+/*& END_PROJECT_CONTENT &*/
+
+/*& START_LINKAGE_INFORMATION &*/
+LIBRARY euser.lib aknicon.lib etel3rdparty.lib eikcoctl.lib gdi.lib eikctl.lib
+LIBRARY bitgdi.lib fbscli.lib ws32.lib bafl.lib apparc.lib cone.lib eikcore.lib
+LIBRARY avkon.lib commonengine.lib efsrv.lib estor.lib
+/*& END_LINKAGE_INFORMATION &*/
+
+#ifdef __S60_5X__
+LIBRARY           touchfeedback.lib
+#endif
+

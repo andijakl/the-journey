@@ -1,0 +1,58 @@
+; Installation file for Journey application
+;
+;Language - standard language definitions
+&EN,GE,RU
+
+; standard SIS file header
+#{"The Journey", "The Journey", "The Journey"},(0x20009AEB),1,40,0
+
+;Localised Vendor name
+%{"Mopius", "Mopius", "Mopius"}
+
+;Unique Vendor name
+:"Mopius"
+
+;Supports S60 3rd Edition
+[0x101F7961], 0, 0, 0, {"Series60ProductID","Series60ProductID","Series60ProductID"}
+
+;Supports S60 5th Edition
+[0x1028315F], 0, 0, 0, {"Series60ProductID","Series60ProductID","Series60ProductID"}
+
+;Supports Symbian^3
+[0x20022E6D], 0, 0, 0, {"Series60ProductID","Series60ProductID","Series60ProductID"}
+
+;Freeware message
+;{
+;	"..\sis\FreewareWarningEN.txt"
+;	"..\sis\FreewareWarningGE.txt"
+;	"..\sis\FreewareWarningEN.txt"
+;}-"",FT
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\Journey.exe"        -"!:\sys\bin\Journey.exe"
+{
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\Journey.r01"
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\Journey.r03"
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\Journey.r16"
+}  -"!:\resource\apps\Journey.rsc"
+
+{
+	"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\Journey_reg.r01"
+	"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\Journey_reg.r03"
+	"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\Journey_reg.r16"
+}  -"!:\private\10003a3f\import\apps\Journey_reg.rsc"
+
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Journey.mif" -"!:\resource\apps\Journey.mif"
+;"$(EPOCROOT)Epoc32\winscw\c\resource\ErrRd" -"C:\Resource\ErrRd"
+
+; Add any installation notes if applicable
+;"Journey.txt"        -"!:\private\20009AEB\Journey.txt"
+
+;required for application to be covered by backup/restore facility 
+"..\sis\backup_registration.xml"		-"!:\private\20009AEB\backup_registration.xml"
+
+;Files to remove on uninstallation
+""-"!:\private\20009AEB\Progress.dat",FN
+""-"c:\private\20009AEB\Journey.ini",FN

@@ -1,0 +1,95 @@
+/*
+* ============================================================================
+*  Name     : journey.l03
+*  Part of  : Journey
+*  Created  : 04.05.2004 by Andreas Jakl
+*  Description:
+*     German localisation file.
+*  Version  : 1.40
+*  Copyright: 
+*     'The Journey' is free software; you can redistribute
+*     it and/or modify it under the terms of the GNU General Public License
+*     as published by the Free Software Foundation; either version 2 of
+*     the License, or (at your option) any later version.
+* 
+*     'The Journey' is distributed in the hope that it
+*     will be useful, but WITHOUT ANY WARRANTY; without even the implied
+*     warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*     See the GNU General Public License for more details.
+* 
+*     You should have received a copy of the GNU General Public License
+*     along with 'The Journey'; if not, write to the Free Software
+*     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+* ============================================================================
+*/
+
+// LOCALISATION STRINGS
+
+#define qtn_menu_options "Optionen"
+
+#define qtn_menu_continue "Spiel Fortsetzen"
+#define qtn_menu_startgame "Neues Spiel"
+#define qtn_menu_exit "Ende"
+#define qtn_menu_about "Über"
+#define qtn_about_text "The Journey v1.40\nMopius, 2011\nwww.mopius.com"
+#define qtn_menu_return "Zurück zum Menü"
+#define qtn_menu_accept "Akzeptieren"
+
+#define qtn_game_paused			"Pause.\nSpiel Beenden?"
+#define qtn_end  				"Ende"
+#define qtn_resume				"Fortsetzen"
+
+#define qtn_continue			"Weiter"
+
+#define qtn_app_caption_string "The Journey"
+
+#define qtn_app_short_caption_string "The Journey"
+
+#define qtn_info_text "'The Journey' ist eine technische Demo, die die Möglichkeiten des ortsabhängigen Geschichten-Erzählens testet. Während des Spiels musst du dich physisch bewegen um zum nächsten virtuellen Schauplatz zu gelangen. In einer Stadt vielleicht nur 100 Meter; am Land ist es möglich, dass du einige Kilometer zurücklegen musst.\n\nDas Spiel 'The Journey II' basiert auf dem gleichen Prinzip, bietet allerdings eine große interaktive Welt, die du erkunden kannst."
+
+#define qtn_privacy_text "Zur Information:\nDiese Applikation verwendet das folgende Feature deines Telefons:\n\n- Indirekte Bestimmung deiner Bewegung durch die Abfrage der Identifikationsnummer der nähesten Funkstationen des Mobilfunknetzwerkes. Diese Information wird nicht verwendet, den tatsächlichen Aufenthaltsort zu bestimmen und bleibt im Mobiltelefon.\n\nFalls du Fragen hierzu hast, bitte kontaktiere uns: contact@mopius.com"
+
+#define qtn_loading "Lade..."
+#define qtn_wrongarea_notpossible "Fehler."
+#define qtn_nonet "Kann die Position nicht ermitteln. Eventuell kein Empfang. Falls doch, kann es helfen, einen Anruf zu initiieren und es danach noch einmal zu versuchen."
+#define qtn_nogsm "Kann die Position nicht ermitteln. Das Telefon verwendet kein kompatibles Netzwerk."
+#define qtn_offline "Kann die Position nicht ermitteln. Zugriff auf das Service wurde nicht erlaubt - möglicherweise ist das Telefon im Offline-Modus."
+
+
+#define qtn_areaname_NO "Straßen"
+#define qtn_areaname_00 "Detektiv-Büro"
+#define qtn_areaname_01 "Bar"
+#define qtn_areaname_02 "Alte Fabrik"
+
+#define qtn_story_000 "Wie immer sitzt du in deinem alten Ledersessel; der zerschlissene Regenmantel als dein treuer Begleiter hängt am Kleiderständer. Es ist bereits sehr spät und es hat tagelang geregnet. Kein einziger Kunde hat in der letzten Zeit dein Büro besucht, allerdings hast du sowieso nichts anderes zu tun. Plötzlich öffnet sich die Türe mit einem lauten Knarren und eine dunkle, große Figur betritt den Raum. Der Mann hinterlässt mit jedem Schritt kleine, schimmernde Wasserlacken, geht zum Tisch und setzt sich, ohne ein Wort zu sagen."
+#define qtn_story_001 "Du kannst nicht viel von ihm erkennen, da sein ganzes Gesicht im Schatten der schwarzen Kapuze versteckt ist. Mit einer dunklen Stimme fängt er an zu reden: 'Soweit ich weiß, sind Sie der beste Detektiv.' - Es scheint so, als würde er nicht auf eine Antwort warten. - 'Ich habe ein Angebot für Sie. Sie müssen nur jemanden für mich finden, und ich werde mich um Ihre finanzielle Situation kümmern.'"
+#define qtn_story_002 "Er holt ein zerknittertes Bild aus seiner Tasche und zeigt es dir. 'Ich habe nur dieses Foto. Alles, was ich Ihnen sagen kann ist, dass er mir etwas sehr wertvolles gestohlen hat. Außerdem hält er sich sehr oft in der schmierigen Bar namens >Schlabo's Bar< auf. Das wäre sicherlich ein guter Ort, um mit der Suche nach ihm zu beginnen.'"
+#define qtn_story_003 "Nach einer kurzen Pause fährt er fort: 'Haben Sie Interesse an diesem Auftrag?' Die Art, wie er dich ansieht, lässt in dir das Gefühl aufsteigen, dass du sowieso keine andere Wahl hättest. Du nickst. Er hat offensichtlich diese Reaktion erwartet und fährt ohne Umschweife fort: 'Gut. Ich werde später zurückkommen. Ich erwarte, dass Sie ihn bis dahin gefunden haben.'. Ohne jegliches weiteres Wort steht er auf und verlässt den Raum. Nun ja, am besten du machst dich auf die Suche nach der Bar!"
+
+#define qtn_story_004 "In der regnerischen Nacht kannst du die Worte >Bar< ausmachen, dargestellt von flackernden grünen Neonröhren - es ist >Schlabo's Bar<. Ohne zu zögern betrittst du das Lokal und passierst den bulligen Türsteher. Du setzt dich an einen der Barhocker, bestellst ein Bier und zeigst der Bardame das Foto, das dir dein Kunde gegeben hat."
+#define qtn_wrongarea_004_NO "Die Bar muss ganz in der Nähe sein - geh noch etwas weiter..."
+#define qtn_wrongarea_004_00 "Du musst die Bar finden. Verlasse dein Büro und gehe durch die Straßen! (Hinweis: Du musst spazieren gehen, das Spiel erkennt deine Bewegung automatisch. Es ist möglich, dass du mehrere hundert Meter oder sogar einige Kilometer zurücklegen musst, bis deine Bewegung erkannt wird und sich der Spiel-Bildschirm ändert. Gehe deshalb einfach wo anders hin, allerdings nicht in einem Kreis.)"
+#define qtn_story_005 "Zuerst gibt sie vor, nichts zu wissen. Nachdem du ihr allerdings ein paar Banknoten zusteckst, kann sie sich plötzlich erinnern. So funktioniert es immer. 'Er sitzt fast jeden Tag an dem Tisch neben dem Eingang. In den letzten Tagen war er allerdings nicht hier, ich weiß auch nicht warum. Vielleicht kann Ihnen der Typ mit dem schwarzen Mantel helfen, soweit ich weiß unterhält er sich öfters mit ihm.' Du dankst ihr und gehst zum Tisch."
+#define qtn_wrongarea_005_NO "Kehre zu dem Ort zurück, an dem du die Bar gefunden hast, um weitere Informationen zu erhalten."
+#define qtn_story_006 "Er ist nicht gerade freundlich; das ändert sich allerdings schlagartig, nachdem du ihm das Foto gezeigt hast - er starrt dich mit einem von Sorgen gezeichneten Gesicht an. Endlich unterhält er sich mit dir: 'Ich bin Richard. Der Mann nach dem Sie suchen ist mein Freund namens Ben. Ich mache mir bereits große Sorgen um ihn. Ich habe ihn schon seit einer halben Ewigkeit nicht mehr gesehen. Das letzte, was ich von ihm gehört habe war, dass er in riskante Geschäfte mit einer düsteren Person verwickelt war."
+#define qtn_story_007 "Gleich darauf fährt er fort: 'Ich kann Ihnen den Weg zu einer alten Fabrik außerhalb der Stadt zeigen, vielleicht können wir Ben dort finden. Er hat bei unserem letzten Treffen von diesem verfallenen Gelände erzählt.' Du entschließt dich, Richard zu vertrauen, und gehst gemeinsam mit ihm zu deinem Auto. Folge seinen Instruktionen, um die alte Fabrik zu finden!"
+
+#define qtn_story_008 "Du hast die alte Fabrik gefunden. Es sieht so aus, als ob sie schon vor langer Zeit geschlossen worden wäre. Vorsichtig betreten Richard und du die Halle. Ihr findet Ben geknebelt in einer Ecke liegen. Richard läuft zu ihm und befreit ihn von seinen Fesseln. Sofort fängt Ben zu reden an: 'Er wollte mich umbringen! Wir müssen ihn so schnell wie möglich finden, er hat etwas äußerst böses vor...' Du vermutest sofort, dass er deinen rätselhaften Auftraggeber meint."
+#define qtn_wrongarea_008_NO "Einfach weiter gerade aus, und wir sollten bald angekommen sein!"
+#define qtn_wrongarea_008_00 "Wir sind hier falsch, du musst in die andere Richtung fahren!"
+#define qtn_wrongarea_008_01 "Richard zeigt dir den Weg - 'Fahre in diese Richtung' - und deutet zu der Straße, die weg von der Bar führt."
+#define qtn_story_009 "Du antwortest: 'Er wird bald zu meinem Büro zurückkommen. Wir können ihm dort auflauern, um ihn festnehmen zu können.' Ben und Richard akzeptieren deinen Plan und so macht ihr euch auf den Weg zum Auto, um zurück zum Büro zu kommen."
+#define qtn_wrongarea_009_NO "Kehre zur Fabrik zurück, um mehr Informationen zu erhalten."
+
+#define qtn_story_010 "Ein paar Sekunden nachdem ihr das Büro erreicht habt, betritt der dunkle Mann bereits das Zimmer, und schaut etwas überrascht aus. Mit einer leisen Stimme sagt er: 'Gut. Sie haben ihn gefunden.'"
+#define qtn_wrongarea_010_NO "Fahre zum Büro zurück - dem Ort, an dem du den dunklen Mann getroffen hast. Beeil dich! (Hinweis: Das ist der Ort, an dem du das Spiel gestartet hast.)"
+#define qtn_wrongarea_010_01 "Fahre zum Büro zurück - dem Ort, an dem du den dunklen Mann getroffen hast. Beeil dich! (Hinweis: Das ist der Ort, an dem du das Spiel gestartet hast.)"
+#define qtn_wrongarea_010_02 "Verlasse die Fabrik und fahre zum Büro zurück - dem Ort, an dem du den dunklen Mann getroffen hast. Beeil dich!"
+#define qtn_story_011 "Plötzlich ziehen Richard und Ben ihre Waffen und visieren den dunklen Mann an - und dich! Zuerst ergibt das keinen Sinn für dich, doch dann fällt es dir wie Schuppen von den Augen. Wieso sollte der vermeintlich böse Auftraggeber Ben fesseln und dich dann beauftragen, um ihn zu finden? Ben hat dich ausgetrickst und sich selbst gefesselt, damit du ihn zu seinem eigenen, persönlichen Feind locken kannst... Angestrengt versuchst du nachzudenken, wie du aus dieser unangenehmen Lage entfliehen könntest. Du bist in der Falle. Ben hat sich vor der Tür postiert, so dass niemand entkommen kann, während Richard den Raum überwacht."
+#define qtn_wrongarea_011_NO "Spiel pausiert. Kehre zum Büro zurück, um das Spiel fortzusetzen."
+#define qtn_story_012 "Mit einem Knall fliegt die Türe auf und wirft Ben von den Füßen. Du wirbelst herum, ziehst deine Waffe und schießt Richard in den Fuß. Das ist nahezu das einzige, was du gut kannst. Nachdem du und der dunkle Mann sich um eure neuen Gefangenen gekümmert haben, bekommst du endlich Gelegenheit, den Retter, der den Raum betreten hatte, anzusehen. Du traust deinen Augen nicht - es ist eine wunderschöne junge Frau, die knapp davor ist, in Ohnmacht zu fallen. Ein Kunde? Du musst sie einmal ausführen, wenn dieser Fall vorbei ist..."
+#define qtn_story_013 "Der dunkle Mann bedankt sich bei dir und erzählt dir, dass er in Wirklichkeit ein Polizist ist und er bereits seit Monaten nach Ben gesucht hatte. Er wollte dir die wahre Geschichte nicht verraten, da er wusste, dass Privatdetektive nicht gerne mit der Polizei zusammenarbeiten. Mit deiner Hilfe konnte diese lange, unglückliche Suche endlich ein Ende finden. Du lehnst dich in deinem Sessel zurück und freust dich bereits auf dein zukünftiges Rendez-Vous in der Bar..."
+#define qtn_story_014 "Gratulation! Du bist der Held der Stadt, wenn auch nur für einen Tag..."
+
+
+// End of File

@@ -1,0 +1,19 @@
+/*
+============================================================================
+ Name        : Journey.rls
+ Author      : Andreas Jakl
+ Copyright   : 2007, Mopius
+ Description : This is a localisation file for Journey
+               A .rls file is the one and only place where the logical
+			   strings to be localised are defined. 
+============================================================================
+*/
+
+//  LOCALISATION STRINGS
+
+// Caption string for app.
+#define qtn_caption_string "The Journey"
+
+#define qtn_loc_resource_file_1 "\\resource\\apps\\Journey"
+
+// End of File

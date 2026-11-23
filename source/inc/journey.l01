@@ -1,0 +1,93 @@
+/*
+* ============================================================================
+*  Name     : journey.l01
+*  Part of  : Journey
+*  Created  : 04.05.2004 by Andreas Jakl
+*  Description:
+*     English localisation file.
+*  Version  : 1.
+*  Copyright: 
+*     'The Journey' is free software; you can redistribute
+*     it and/or modify it under the terms of the GNU General Public License
+*     as published by the Free Software Foundation; either version 2 of
+*     the License, or (at your option) any later version.
+* 
+*     'The Journey' is distributed in the hope that it
+*     will be useful, but WITHOUT ANY WARRANTY; without even the implied
+*     warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*     See the GNU General Public License for more details.
+* 
+*     You should have received a copy of the GNU General Public License
+*     along with 'The Journey'; if not, write to the Free Software
+*     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+* ============================================================================
+*/
+
+// LOCALISATION STRINGS
+
+#define qtn_menu_options "Options"
+
+#define qtn_menu_continue "Continue Game"
+#define qtn_menu_startgame "Start New Game"
+#define qtn_menu_about "About"
+#define qtn_about_text "The Journey v1.40\nMopius, 2011\nwww.mopius.com"
+#define qtn_menu_exit "Exit"
+#define qtn_menu_return "Return to Menu"
+#define qtn_menu_accept "Accept"
+
+#define qtn_game_paused			"Game paused.\nEnd Game?"
+#define qtn_end  				"End"
+#define qtn_resume				"Resume"
+
+#define qtn_continue			"Continue"
+
+#define qtn_app_caption_string "The Journey"
+
+#define qtn_app_short_caption_string "The Journey"
+
+#define qtn_info_text "'The Journey' is a technical demo that explores location based storytelling. During the game, you will have to move physically to get to the next virtual location. In a city this might only be 100 m, but on the countryside it's possible that you have to drive a few kilometers.\n\nThe game 'The Journey II' builds on the same basic concept, but introduces a large interactive world for you to explore."
+
+#define qtn_privacy_text "For your information:\nThis application will make use of the following feature of your phone:\n\n- Indirectly determining your movement through querying the IDs of the nearest mobile phone network masts. This information is not used to determine your real location and stays in your phone. There is no charge for querying the location using this method.\n\nIf you have any questions or concerns, please contact us at contact@mopius.com"
+
+#define qtn_loading "Loading..."
+#define qtn_wrongarea_notpossible "Error."
+#define qtn_nonet "Unable to get your location. Maybe you do not have reception. If you do, try to initiate a call to any of your contacts and restart the game."
+#define qtn_nogsm "Unable to get your location. Your phone does not use the required network type."
+#define qtn_offline "Unable to get your location. Access to the service was denied - maybe your phone is in offline mode."
+
+#define qtn_areaname_NO "Streets"
+#define qtn_areaname_00 "Detective Bureau"
+#define qtn_areaname_01 "Bar"
+#define qtn_areaname_02 "Old Factory"
+
+#define qtn_story_000 "As usual, you are sitting in your old leather chair, wearing your worn-out trenchcoat. It's late at night and it has been raining for days. No client has visited your detective bureau lately, but you don't have anything else to do anyway. Suddenly the door opens and a dark, tall figure enters. With every step he takes, a small puddle of rain water helps to clean your floor."
+#define qtn_story_001 "He walks to your table, sits down and stares at you. You can't see much of him, his whole face is hidden in the shadow of his black hood. With a dark voice he starts to talk, 'You are the best detective, at least from what I've heard.' - he does not seem to wait for an answer. 'I have an offer for you. You just have to find somebody for me and I will take care of your financial situation, which seems to be quite worrying. From what I've heard.'"
+#define qtn_story_002 "He takes an torn picture out of his pocket. 'This photo is all I have. I can tell you is that he has stolen something and that I want it back. Rumor has it that he likes a bar called >Schlabo's Inn<'. This would be a good place to start your search. But enough talking.'"
+#define qtn_story_003 "After a short pause he continues. 'Are you interested in this offer?'. The way he stares at you makes you feel like you have no other choice. You nod. Having expected this answer, he says, 'Good. I will be back later. I expect you to have found him by then.'. Without any further comments, he stands up and leaves. Well, you better start searching for the bar!"
+
+#define qtn_story_004 "In the rainy night you see the word >Bar<. Somebody should probably replace the neon tubes, as they're constantly flickering. But then again, everyone is used to it already. Anyway, it's >Schlabo's Inn<. Without hesitating, you enter the bar and pass the brawny bouncer. You take a seat at the bar, order a pint of beer and ask the barmaid about the picture your client has given you."
+#define qtn_wrongarea_004_NO "Continue searching for the bar. It has to be close to your current location."
+#define qtn_wrongarea_004_00 "You have to find the bar. Leave your bureau and walk through the streets! (Hint: You have to start walking, the game will automatically detect your movement. It's possible that you have to move several hundred meters or even kilometers until your movement is detected and the display changes. Just walk or drive somewhere else, don't walk around in circles.)"
+#define qtn_story_005 "At first she pretends not to know anything, but after you pass her some money, she suddenly remembers. It always works that way. 'He spends many ours every week at the table near the entrance. However, in the past few days he hasn't shown up. I don't know why. Maybe the guy with the black coat over there can help you, I've seen him talking to him quite often.' You thank her and head to the table."
+#define qtn_wrongarea_005_NO "Return to the place where you've found the bar to get more information."
+#define qtn_story_006 "At first the man isn't friendly at all, urging you to leave him alone. After you show him the picture, he stares at you with a careworn look. He starts to talk, 'I'm Richard, the guy you're searching for is my friend. He's called Ben. I'm already quite worried. I havn't seen him for ages. The last thing I've heard was that he was involved in some risky business with a strange guy.'"
+#define qtn_story_007 "After a short pause he continues - 'I can show you the way to an old factory outside of town, maybe we can find Ben there. He mentioned that place last time I saw him.' You decide to trust Richard and leave the car. Your trustworthy car is waiting for you. Follow Richard's instructions to find the old factory!"
+
+#define qtn_story_008 "You've found the old factory. It seems to have been closed a long time ago. Cautious not to make any noise, you and Richard enter the hall. After your eyes have adapted to the darkness, you find Ben tied up in a corner. Richard runs over to him and frees him of his bonds. Ben starts talking immediately, 'He wanted to kill me! We have to find him as fast as possible, he's up to something very, very evil...' You suspect right away that Ben is talking about your mysterious client."
+#define qtn_wrongarea_008_NO "Just go straight ahead and follow the street for some time. Soon, we'll reach our destination."
+#define qtn_wrongarea_008_00 "We're wrong over here, you have to drive in the other direction."
+#define qtn_wrongarea_008_01 "Richard says - 'Drive in this direction' - and points to the street that leads away from the bar."
+#define qtn_story_009 "You answer, 'He'll come back to my bureau soon. We can go there and wait for him, so that we can arrest him.' Ben and Richard agree; you leave the factory in order to drive back to your bureau."
+#define qtn_wrongarea_009_NO "Return to the place where you found the old factory to get some more information!"
+
+#define qtn_story_010 "A few minutes after you arrive at your bureau, the black guy who proposed your job a few hours ago enters and looks a bit surprised. He starts talking with a low voice, 'Good. You've found him. I havn't expected you to be that fast.'"
+#define qtn_wrongarea_010_NO "Go back to your bureau, to the location where you met the dark and tall guy. Hurry up! (Hint: This is the location where you started the game.)"
+#define qtn_wrongarea_010_01 "Go back to your bureau, to the location where you met the dark and tall guy. Hurry up! (Hint: This is the location where you started the game.)"
+#define qtn_wrongarea_010_02 "Leave the old factory and drive back to your bureau, the location where you met the dark and tall guy. Hurry up!"
+#define qtn_story_011 "Then, both Richard and Ben pull their guns and point them at the dark man and - you! First, this doesn't make sense, but then you understand. Why should the supposedly evil guy tie Ben up and then ask you to find him? Ben has just played a trick on you and tied himself up, so that you lead him right to his personal enemy... You try hard to think about what to do in this dangerous situation. You're in a trap. Ben moved to the door so that nobody can escape, while Richard observes the room."
+#define qtn_wrongarea_011_NO "Game Paused. Return to your bureau to continue the game."
+#define qtn_story_012 "All of a sudden the door is opened with force, smashing Ben down. You whirl around, pull your gun and shoot Richard right in the leg. That's almost the only thing you're good at. After you and the dark guy take care of them, you have a chance to look at the person who entered. This has to be some kind of weird dream - it's a beautiful lady, who is about to faint. A new client? Two clients in one month, that's an new all-time record. You'll have to invite the woman to a bar, as soon as this case is finished."
+#define qtn_story_013 "The dark guy thanks you and finally tells you the whole story. He's a cop and has been searching for Ben for several months, without any luck whatsoever. With your help, this long, exhausting search has come to an end. He didn't want to tell you that he's from the police, as private detectives usually don't like to cooperate with the cops. After they're gone, you lean back in your chair and look forward to meeting the lady again."
+#define qtn_story_014 "Congratulations! You're the hero, even if only for one day..."
+
+// End of File
