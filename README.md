@@ -3,10 +3,11 @@
 **A mobile location-based adventure game for Symbian / S60 (2004 – 2011)**
 
 <p align="center">
-  <img src="source/gfx/storyBureauGuy.svg" height="150" alt="The mysterious client in the detective bureau">
-  <img src="source/gfx/areaBar.svg" height="150" alt="The bar">
-  <img src="source/gfx/areaFactory.svg" height="150" alt="The old factory">
+  <img src="docs/screenshots/thejourney_sx1.png" height="300" alt="The Journey running on a Siemens SX1 (2004)">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/thejourney_n95.png" height="300" alt="The Journey title screen on a Nokia N95">
 </p>
+<p align="center"><em>The original 2004 version on a Siemens SX1, and the S60 3rd Edition version on a Nokia N95.</em></p>
 
 *The Journey* was the world's first location-based mobile adventure game. You play an
 infamous detective who is hired by a mysterious man. To make progress, you don't move a
@@ -26,6 +27,20 @@ reference. Building or installing a Symbian application today takes some effort;
 Project website: <https://journey.andreasjakl.com/>
 
 ---
+
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/Journey_Title.png" height="260" alt="Title screen">
+  <img src="docs/screenshots/Journey_Bureau.png" height="260" alt="The detective bureau">
+  <img src="docs/screenshots/Journey_Bar.png" height="260" alt="The bar">
+  <img src="docs/screenshots/Journey_Factory.png" height="260" alt="The old factory">
+</p>
+<p align="center">
+  <img src="docs/screenshots/Journey_Streets.png" height="220" alt="Searching for the bar in landscape mode">
+</p>
+<p align="center"><em>Title screen, detective bureau, bar and old factory. Below: while you walk,
+the game shows "Streets" until it detects that you reached the next location.</em></p>
 
 ## History
 
@@ -88,7 +103,8 @@ a PC.
 │   ├── readme.txt
 │   └── install.txt
 ├── docs/
-│   └── bachelor-thesis-2004.pdf   Original thesis (2004)
+│   ├── bachelor-thesis-2004.pdf   Original thesis (2004)
+│   └── screenshots/               Screenshots and phone photos
 └── LICENSE                  GNU GPL v3
 ```
 
