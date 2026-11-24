@@ -141,6 +141,17 @@ capability was originally granted through Symbian Signed.
 * UID: `0x20009AEB`
 * Languages: English (01), German (03), Russian (16)
 
+## Changes since v1.40
+
+The source code is the v1.40 release with two small bug fixes from 2026. The installer
+in `release/` is the original, unchanged v1.40 build.
+
+* `CSysInfo` now cancels an outstanding cell ID request before it is destroyed.
+  Previously, leaving the game screen while a request was pending could crash the app.
+* `CJourneyAppUi` now deletes the timer of a previous view switch. Previously, every
+  additional *Start game* or *Continue game* leaked one `CPeriodic`. The timer is also
+  stopped before the view switch, so a failed switch isn't retried every millisecond.
+
 ## License
 
 Copyright © 2004 – 2011 Andreas Jakl

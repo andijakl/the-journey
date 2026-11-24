@@ -186,6 +186,13 @@ void CJourneyAppUi::PrepareViewSwitch(TUid aTargetViewId, TUid aParameter)
 	// after the view got time to do a redraw etc.
 	iTargetViewId = aTargetViewId;
 	iTargetViewParam = aParameter;
+	// Delete the timer of a previous view switch, otherwise it would leak
+	if ( iPeriodicTimer )
+	{
+		iPeriodicTimer->Cancel();
+		delete iPeriodicTimer;
+		iPeriodicTimer = NULL;
+	}
 	iPeriodicTimer = CPeriodic::NewL( CActive::EPriorityStandard );
 	iPeriodicTimer->Start(100, 1000, TCallBack( CJourneyAppUi::Period, this));
 }
@@ -198,7 +205,8 @@ void CJourneyAppUi::PrepareViewSwitch(TUid aTargetViewId, TUid aParameter)
 TInt CJourneyAppUi::Period( TAny* aPtr )
 {
 	( static_cast<CJourneyAppUi*>( aPtr ) )->DoPeriodTask();
-	// Returning a value of EFalse indicates the callback should not be done again
+	// Note: CPeriodic ignores the return value, the timer is stopped
+	// in DoPeriodTask()
 	return EFalse;
 }
 
@@ -210,14 +218,15 @@ TInt CJourneyAppUi::Period( TAny* aPtr )
 void CJourneyAppUi::DoPeriodTask()
 {
 	TPtrC8 temp;
+	// We do no longer need the timer. Stop it before the view switch:
+	// if ActivateLocalViewL() leaves, the timer must not fire again.
+	iPeriodicTimer->Cancel();
 	// Start the view switch now, after the delay has passed.
 	// Only an ActivateLocalViewL with one parameter specifying the
 	// view is available, or the one used here with three parameters
 	// and an descriptor as the third, which we do not need here, but still
 	// have to pass.
 	ActivateLocalViewL(iTargetViewId, iTargetViewParam, temp);
-	// We do no longer need the timer
-	iPeriodicTimer->Cancel();
 }
 
 // -----------------------------------------------------------------------------

@@ -47,6 +47,9 @@ void CSysInfo::ConstructL()
 //------------------------------------------------------------------------------
 CSysInfo::~CSysInfo()
 {
+	// Cancel an outstanding request first. Destroying an active object
+	// while it is still active panics, and DoCancel() needs iTelephony.
+	Cancel();
 	CloseTelServer();
 }
 
